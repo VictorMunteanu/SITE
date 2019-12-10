@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
 }
 
 html {
@@ -19,7 +19,7 @@ h1 {
 }
 
 .Top-name {
-    color: #003d99;
+    color: yellow;
     font-size: 35px;
 }
 
@@ -33,19 +33,35 @@ p {
 
 .indexLp {
     margin-bottom: 1px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .newsLp {
     margin-top: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .logo {
+    display: flex;
+    outline: none;
+    width: 225px;
+    height: 225px;
+    margin-left: 55px;
+}
+
+.logo1 {
+    display: flex;
+    outline: none;
+    width: 225px;
+    height: 225px;
+    margin-left: 55px;
+}
+
+.logoback {
     background: #000;
     width: 100%;
-    height: 230px;
-    display: flex;
-    justify-content: center;
-    outline: none;
 }
 
 body {
@@ -55,7 +71,7 @@ body {
 nav {
     margin: auto;
     background: black;
-    padding-left: 26.3%;
+    justify-content: center;
 }
 
 .ulnav {
@@ -80,6 +96,7 @@ main {
 
 main .indexpage {
     text-align: center;
+    width: 100%;
 }
 
 .bmwstart {
@@ -144,54 +161,26 @@ iframe {
     height: 100px;
     width: auto;
     outline: none;
+    display: inline;
 }
 
 .galeryimg {
-    width: 750px;
-    height: 450px;
+    width: 600px;
+    height: 370px;
     outline: 5px solid black;
-}
-
-.foto-cars {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-gap: 40px;
-}
-
-.tabel-foto-cars {
-    width: 750px;
-    height: auto;
-}
-
-.video-cars {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-column-gap: 5px;
-}
-
-.video {
-    margin-bottom: 45px;
 }
 
 .top-cars {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-column-gap: 55px;
+    align-items: center;
 }
 
-.top {
-    margin-bottom: 45px;
-    width: 750px;
-    height: auto;
-}
-
-.top-img {
-    width: 720px;
+img {
+    margin: 0 auto;
+    width: 600px;
     height: auto;
     outline: 5px solid black;
+    display: block;
+    margin-bottom: 45px;
 }
 
 .topnav {
@@ -202,8 +191,7 @@ iframe {
 }
 
 .topnav a {
-    float: right;
-    display: block;
+    float: left;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -215,35 +203,57 @@ iframe {
     color: black;
 }
 
-.topnav a.active1 {
+.topnav a.active5 {
     background-color: #b30000;
     color: white;
-}
-
-.topnav a.active2 {
-    background-image: linear-gradient(to left, #b30000, #b5003c, #9e0069, #6e248b, #003d99);
-    color: white;
-}
-
-.topnav a.active3 {
-    background-color: #003d99;
-    color: white;
+    width: 70px;
 }
 
 .topnav a.active4 {
-    background-image: linear-gradient(to right, #4d94ff, #3e7de5, #2e67cb, #1b52b2, #003d99);
+    background-color: #b30000;
     color: white;
+    width: 70px;
 }
 
-.topnav a.active5 {
-    background-color: #4d94ff;
+.topnav a.active3 {
+    background-color: #b30000;
     color: white;
+    width: 70px;
 }
 
-.names{
+.topnav a.active2 {
+    background-color: #b30000;
+    color: white;
+    width: 70px;
+}
+
+.topnav a.active1 {
+    background-color: #b30000;
+    color: white;
+    width: 70px;
+}
+
+.names {
     width: 100%;
     height: 50px;
     background: #525150;
     margin-bottom: 50px;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    .logo1 {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    .topnav {
+
+        background-color: #000;
+
+    }
 }
