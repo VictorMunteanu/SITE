@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 
 a {
     text-decoration: none;
@@ -40,10 +42,43 @@ p {
 
 .logo {
     background: #000;
-    width: 100%;
-    height: 230px;
+    height: 220px;
     display: flex;
     justify-content: center;
+    outline: none;
+}
+
+.glogo1 {
+    width: 210px;
+    height: auto;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.glogo2 {
+    width: 270px;
+    height: auto;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.glogo3 {
+    width: 210px;
+    height: auto;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.glogo4 {
+    width: 210px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.glogo5 {
+    width: 210px;
+    height: auto;
+    box-sizing: border-box;
     outline: none;
 }
 
@@ -59,13 +94,13 @@ nav {
 
 .ulnav {
     display: flex;
-    background-color: none;
+    background-color: #fff;
     font-size: 25px;
     margin-top: 50px;
     justify-content: center;
     padding: 10px 10px;
     margin-left: 15px;
-    color: #000;
+    text-decoration: none;
 }
 
 .ulnav a {
@@ -108,9 +143,11 @@ section p {
 .newsimg {
     width: 780px;
     height: auto;
-    outline: 5px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
-    margin-left: 405px;
+    outline: 5px solid black;
 }
 
 footer {
@@ -168,56 +205,22 @@ iframe {
 }
 
 .galeryimg {
-    width: 720px;
+    width: 550px;
     height: auto;
     outline: 5px solid black;
-}
-
-.galeryimg1 {
-    width: 720px;
-    height: auto;
-    outline: 5px solid black;
-    margin-bottom: 45px;
-}
-
-.foto-cars {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-gap: 40px; 
-}
-
-.tabel-foto-cars {
-    width: 750px;
-    height: auto;
-}
-
-.video-cars {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-column-gap: 5px;
+    margin-bottom: 15px;
 }
 
 .video {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
-.top-cars {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    grid-column-gap: 55px;
-}
+@media screen and (max-width: 1110px) {
+    .glogo1 {
+        display: none;
+    }
 
-.top {
-    margin-bottom: 45px;
-    width: 750px;
-    height: auto;
-}
-
-.top-img {
-    width: 720px;
-    height: auto;
-    outline: 5px solid black;
+    .glogo5 {
+        display: none;
+    }
 }
