@@ -215,6 +215,12 @@ iframe {
     margin-bottom: 40px;
 }
 
+.harta {
+    outline: 5px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
 @media screen and (max-width: 1110px) {
     .glogo1 {
         display: none;
@@ -222,5 +228,12 @@ iframe {
 
     .glogo5 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .harta {
+        width: 700px;
+        height: 450px;
     }
 }
