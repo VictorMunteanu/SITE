@@ -275,6 +275,11 @@ hr {
     padding: 5px;
 }
 
+.client {
+    width: 500px;
+    height: auto;
+}
+
 /***** MODAL CONTACT *****/
 
 .modal-content {
@@ -507,8 +512,6 @@ hr {
     font-weight: 600;
     margin: 15px 0;
 }
-
-/* Copyrights */
 
 #copyrights {
     background: #222222;
